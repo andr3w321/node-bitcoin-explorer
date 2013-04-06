@@ -16,7 +16,7 @@ var fs = require('fs');
 var init = require('bitcoinjs/daemon/init');
 var config = init.getConfig();
 
-var app = module.exports = express.createServer();
+var app = express();
 
 var rpcClient = new RpcClient(config.jsonrpc.port, config.jsonrpc.host,
                               config.jsonrpc.username, config.jsonrpc.password);
@@ -143,5 +143,5 @@ app.get('/address/:addrBase58', function (req, res) {
 
 if (!module.parent) {
   app.listen(3000);
-  winston.info("Express server listening on port " + app.address().port);
+  winston.info("Express server listening on port 3000");
 }

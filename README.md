@@ -13,7 +13,7 @@ installed.
 
 ``` sh
 # Get node-bitcoin-explorer
-git clone git://github.com/justmoon/node-bitcoin-explorer.git --recursive
+git clone git://github.com/bitcoinjs/node-bitcoin-explorer.git --recursive
 
 # Go to folder
 cd node-bitcoin-explorer
